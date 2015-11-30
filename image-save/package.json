@@ -6,7 +6,6 @@
   "dependencies": {
     "async": "^1.5.0",
     "aws-sdk": "^2.2.17",
-    "bluebird": "^3.0.5",
     "gm": "^1.21.1",
     "lodash": "^3.10.1"
   }

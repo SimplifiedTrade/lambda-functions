@@ -10,7 +10,7 @@ module.exports = {
 				"Signature": "EXAMPLE",
 				"SigningCertUrl": "EXAMPLE",
 				"MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
-				"Message": "{\"size\":\"l\",\"width\":1024,\"id\":\"3674281a-9181-11e5-b451-685b35938fe5\",\"type\": \"jpg\"}",
+				"Message": "{\"size\":\"l\",\"width\":1024,\"id\":\"3674281a-9181-11e5-b451-685b35938fe5\",\"type\": \"jpg\",\"bucket\": \"lambda-test-999\"}",
 				"MessageAttributes": {
 					"Test": {
 						"Type": "String",
