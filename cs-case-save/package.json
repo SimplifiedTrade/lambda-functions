@@ -1,0 +1,12 @@
+{
+  "name": "cs-case-save",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "*",
+    "buffer": "*",
+    "crypto": "*",
+    "util": "*"
+  }
+}
