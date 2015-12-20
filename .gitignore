@@ -89,4 +89,9 @@ $RECYCLE.BIN/
 
 # OUTPUT: project output for testing
 image-resize.zip
-image-save.zip
+image-save.zip.env
+
+
+.env
+deploy.env
+event.json
