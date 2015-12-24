@@ -1,7 +1,12 @@
 // ==========
 // = stImageSave01 =
 // Lambda Function for AWS, to upload an image to S3 then fire off image resize events on SNS
-// Role: imageResizeLambdaSns
+// 
+// Config:
+//	Role: "imageResizeLambdaSns"
+//	Runtime: "nodejs",
+//	MemorySize: 192,
+//	Timeout: 40
 // ==========
 
 var AWS = require( "aws-sdk" ),
@@ -158,7 +163,8 @@ exports.handler = function( event, context ) {
 
 
 /*
+	cd image-save
 	zip -r ../image-save.zip .
-	lambda-local -l index.js -t 20 -e event-sample.js
+	lambda-local -l index.js -t 20 -e event.json
 
 */

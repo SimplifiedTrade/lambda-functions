@@ -1,10 +1,14 @@
 // ==========
 // = stImageResize01 =
 // Lambda Function for AWS, to resize an image located on S3 after an SNS event has been fired
-// Role: imageResizeLambdaSns
 // SNSTopic Listener: stSnsImageMakeSizes | arn:aws:sns:us-east-1:902325651126:stSnsImageMakeSizes
+// 
+// Config:
+//	Role: "imageResizeLambdaSns"
+//	Runtime: "nodejs",
+//	MemorySize: 192,
+//	Timeout: 40
 // ==========
-
 
 var AWS = require( "aws-sdk" ),
 	buffer = require( "buffer" ),
@@ -128,7 +132,8 @@ exports.handler = function( event, context ) {
 
 
 /*
+	cd image-resize
 	zip -r ../image-resize.zip .
-	lambda-local -l index.js -t 20 -e event-sample.js
+	lambda-local -l index.js -t 20 -e event.json
 
 */

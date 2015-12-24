@@ -1,10 +1,9 @@
 {
-  "name": "case-save",
+  "name": "s3-signing",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "mout": "^0.11.1",
-    "nimble": "0.0.2"
+    "aws-sdk": "^2.2.17"
   }
 }
