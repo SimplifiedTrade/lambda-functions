@@ -11,11 +11,11 @@
 
 var AWS = require( "aws-sdk" ),
 	buffer = require( "buffer" ),
-	https = require( "https" ),
+	// https = require( "https" ),
 	path = require( "path" ),
-	tls = require( "tls" ),
+	// tls = require( "tls" ),
 	crypto = require( "crypto" ),
-	util = require( "util" ),
+	// util = require( "util" ),
 	nimble = require( "nimble" ),
 	mixIn = require( "mout/object/mixIn" ),
 	isObject = require( "mout/lang/isObject" ),
@@ -38,7 +38,10 @@ var esDomain = {
 	};
 	
 exports.handler = function( event, context ) {
-	var id = uuid(),
+	
+	console.info( "EVENT DATA: ", JSON.stringify( event ) );	
+	
+	var id = event.id || uuid(),
 		endpoint =  new AWS.Endpoint( esDomain.endpoint ),
 		creds = new AWS.EnvironmentCredentials( "AWS" ),
 		request = new AWS.HttpRequest( endpoint ),

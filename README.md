@@ -2,3 +2,6 @@
 
 * image-save
 * image-resize
+* image-router
+* es-proxy
+* case-save
